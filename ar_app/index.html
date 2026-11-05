@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pusaka3D AR Explainer</title>
+  <meta name="description" content="Module 5 -- an educational AR app: place a candi (temple) in the real world and tap its parts to learn what each one means.">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Pusaka3D <span class="accent">AR Explainer</span></h1>
+    <div class="topbar-controls">
+      <button id="lang-toggle" class="pill-button" aria-label="Toggle language">EN / ID</button>
+      <button id="quiz-toggle" class="pill-button" aria-pressed="false">Quiz mode: off</button>
+    </div>
+  </header>
+
+  <main>
+    <model-viewer
+        id="viewer"
+        src="assets/pusaka_temple.glb"
+        alt="A procedurally generated candi (temple) model with a stepped base, body, roof, and a stupa finial"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        ar-scale="fixed"
+        ar-placement="floor"
+        camera-controls
+        touch-action="pan-y"
+        shadow-intensity="1"
+        exposure="1.0"
+        environment-image="neutral"
+        camera-orbit="35deg 75deg 1.2m"
+        min-camera-orbit="auto 20deg auto"
+        max-camera-orbit="auto 100deg auto"
+        field-of-view="30deg">
+
+      <div class="poster" slot="poster">
+        <p>Loading the temple model&hellip;</p>
+      </div>
+
+      <button slot="ar-button" id="ar-button" class="pill-button ar-button">
+        View in your space (AR)
+      </button>
+
+      <!-- Hotspot buttons are injected here by app.js from assets/hotspots.json,
+           using model-viewer's data-position / data-normal hotspot slots. -->
+    </model-viewer>
+
+    <aside id="info-panel" class="info-panel" hidden>
+      <button id="info-close" class="info-close" aria-label="Close">&times;</button>
+      <h2 id="info-title"></h2>
+      <p id="info-text"></p>
+    </aside>
+
+    <div id="quiz-banner" class="quiz-banner" hidden>
+      <span id="quiz-prompt">Tap the part named: <strong id="quiz-target"></strong></span>
+      <span id="quiz-score"></span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Module 5 -- Grafika Komputer / Computer Graphics, S1 Informatika, UM Surabaya.
+      Model generated deterministically by <code>make_temple_glb.py</code> (no external asset, CC0-equivalent: authored for this course).
+      Educational text describes generic Hindu-Buddhist candi cosmology, not any single named real site.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

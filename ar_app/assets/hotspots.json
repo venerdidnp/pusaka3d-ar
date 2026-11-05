@@ -1,0 +1,96 @@
+{
+  "model": "pusaka_temple.glb",
+  "_comment": "Generic Hindu-Buddhist candi cosmology (kaki/tubuh/atap = Bhurloka/Bhuvarloka/Svarloka; finial = Mount Meru) -- not a claim about any specific named real-world site.",
+  "hotspots": [
+    {
+      "id": "base",
+      "part": "base",
+      "position": [
+        0.12,
+        0.04,
+        0.12
+      ],
+      "normal": [
+        0.71,
+        0.0,
+        0.71
+      ],
+      "name_en": "Base (kaki candi)",
+      "name_id": "Kaki Candi",
+      "text_en": "The lowest tier represents Bhurloka, the world of ordinary human life, in the three-part cosmology many Hindu-Buddhist candi in Java and Bali follow. It is also the structural foundation carrying the whole building's weight.",
+      "text_id": "Tingkat terbawah melambangkan Bhurloka, alam kehidupan manusia biasa, dalam kosmologi tiga tingkat yang dianut banyak candi Hindu-Buddha di Jawa dan Bali. Bagian ini juga menjadi fondasi struktural yang menopang seluruh bangunan."
+    },
+    {
+      "id": "body",
+      "part": "body",
+      "position": [
+        0.09,
+        0.12,
+        0.09
+      ],
+      "normal": [
+        0.71,
+        0.0,
+        0.71
+      ],
+      "name_en": "Body (tubuh candi)",
+      "name_id": "Tubuh Candi",
+      "text_en": "The body represents Bhuvarloka, the middle realm. In a real candi this section usually holds the inner chamber (garbhagriha) where a statue of a deity was placed.",
+      "text_id": "Tubuh candi melambangkan Bhuvarloka, alam pertengahan. Pada candi sesungguhnya, bagian ini biasanya menyimpan bilik utama (garbhagriha) tempat arca dewa diletakkan."
+    },
+    {
+      "id": "relief",
+      "part": "relief",
+      "position": [
+        0.05,
+        0.12,
+        0.094
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name_en": "Relief panel",
+      "name_id": "Panel Relief",
+      "text_en": "Real candi walls are often carved with narrative reliefs -- story panels meant to be 'read' by walking around the building, teaching religious epics to visitors who could not read.",
+      "text_id": "Dinding candi asli sering dipahat relief naratif -- panel cerita yang dimaksudkan untuk 'dibaca' sambil mengelilingi bangunan, mengajarkan kisah keagamaan kepada pengunjung yang tidak bisa membaca."
+    },
+    {
+      "id": "roof",
+      "part": "roof",
+      "position": [
+        0.045,
+        0.27,
+        0.045
+      ],
+      "normal": [
+        0.71,
+        0.0,
+        0.71
+      ],
+      "name_en": "Roof (atap)",
+      "name_id": "Atap",
+      "text_en": "The tiered roof represents Svarloka, the heavens. Each receding tier steps the building visually toward the sky, toward the finial at its peak.",
+      "text_id": "Atap bertingkat melambangkan Svarloka, alam para dewa. Setiap tingkat yang mengecil membawa bangunan secara visual naik menuju langit, menuju puncak di ujungnya."
+    },
+    {
+      "id": "stupa",
+      "part": "stupa",
+      "position": [
+        0.0,
+        0.42,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "name_en": "Finial (stupa / puncak)",
+      "name_id": "Puncak / Stupa",
+      "text_en": "The finial crowns the temple and, in Hindu-Buddhist cosmology, represents the peak of Mount Meru -- the mythical cosmic mountain the entire candi is a model of.",
+      "text_id": "Puncak menahkotai candi dan, dalam kosmologi Hindu-Buddha, melambangkan puncak Gunung Meru -- gunung kosmis mitologis yang direpresentasikan oleh seluruh bangunan candi."
+    }
+  ]
+}
