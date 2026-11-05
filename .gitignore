@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+/Module5/out/
+/out/*
+!/out/evidence/
+!/out/*.png
+!/out/*.ppm
+!/out/sigma_init_sweep.json
