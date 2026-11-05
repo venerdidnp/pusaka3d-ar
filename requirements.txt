@@ -1,0 +1,15 @@
+# Module 5 -- AI Graphics: NeRF, World Models & AR
+numpy>=1.24
+pygltflib>=1.16          # builds ar_app/assets/pusaka_temple.glb (pure Python, no compiled deps)
+matplotlib>=3.7          # only for ../../figures/make_figures_m5.py
+
+# Optional, heavier: automated headless-browser verification of the AR app
+# (ar_app/verify_ar_app.py). Not required to build or use the app itself --
+# open ar_app/index.html (served over http) in any browser.
+#   pip install playwright
+#   python -m playwright install chromium
+
+# The real tool this module's from-scratch code stands in for (see
+# Module5_EN.tex Software section and README.md "Known deviations"):
+#   pip install nerfstudio          # https://docs.nerf.studio
+#   # + COLMAP for pose estimation, + a CUDA GPU for training
