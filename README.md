@@ -153,4 +153,4 @@ SwiftShader/WebGL launch flags in `ar_app/verify_ar_app.py`.
 | AR browser verification | **10 checks passed**: rendering, hotspots, information panel, language toggle, quiz and no JS errors | `out/evidence/verify_ar_app.txt` |
 | Browser screenshots | Overview, English/Indonesian info panels, quiz mode | `ar_app/screenshots/m5_ar_overview.png`, `ar_app/screenshots/m5_ar_infopanel_en.png`, `ar_app/screenshots/m5_ar_infopanel_id.png`, `ar_app/screenshots/m5_ar_quizmode.png` |
 | Physical-device AR / occlusion | **Pending; not verified** | No physical-device evidence yet |
-| Clean-clone reproduction | **Pending; not verified** | Existing-workspace run only; no clean-clone result claimed |
+| Clean-clone reproduction | **Passed** at `2dfe21425d90f427259a8c8a74bdc62809a40bab`: fresh local Git clone, isolated venv, requirements install, GLB generation, **17 numerical checks passed**; generated assets unchanged | `out/evidence/clean_clone.txt`; Python **3.11.9**, NumPy **2.4.6**, matplotlib **3.11.2**, pygltflib **1.16.5**; browser and physical-device AR not rerun |
